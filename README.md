@@ -18,7 +18,7 @@ text, do it like this:
 
 Or, globally:
 
-  $("a[data-email-protector]").emailProtector({ 'preserve-text': true })
+    $("a[data-email-protector]").emailProtector({ 'preserve-text': true })
 
 Boom! You're done.
 
