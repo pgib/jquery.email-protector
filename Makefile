@@ -1,3 +1,3 @@
 all:
 	coffee -o . -c src/jquery.email-protector.coffee
-	uglifyjs -o jquery.email-protector.js jquery.email-protector.js
+	uglify -o jquery.email-protector.js -s jquery.email-protector.js

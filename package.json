@@ -1,0 +1,31 @@
+{
+  "name": "jquery.email-protector",
+  "version": "0.0.5",
+  "description": "Simple jQuery plug-in to keep email addresses less obvious to harvesters.",
+  "main": "jquery.email-protector.js",
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "uglify": "^0.1.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "uglify": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgib/jquery.email-protector.git"
+  },
+  "keywords": [
+    "jquery",
+    "email"
+  ],
+  "author": "Patrick Gibson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgib/jquery.email-protector/issues"
+  },
+  "homepage": "https://github.com/pgib/jquery.email-protector"
+}
