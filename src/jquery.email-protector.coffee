@@ -38,12 +38,13 @@ $.fn.extend
     return @each ->
       el = $(@)
       parts = el.attr('data-email-protector').split('|')
+      preserveText = if el.attr('data-email-protector-preserve-text') then el.attr('data-email-protector-preserve-text') != 'false' else settings['preserve-text']
 
       if parts.length == 2
         if queryMatch = parts[1].match(/(\?.+)/)
           query = queryMatch[1]
           parts[1] = parts[1].substring(0, parts[1].indexOf('?'))
-        el.text "#{parts[0]}@#{parts[1]}" unless settings['preserve-text'] or el.attr('data-email-protector-preserve-text')
+        el.text "#{parts[0]}@#{parts[1]}" unless preserveText
         el.attr 'href', "mailto:#{parts[0]}@#{parts[1]}#{query ? ''}"
       else
         el.text "Invalid format. eg. <a data-email-protector=\"foo|bar.com\"></a> will become <a href=\"mailto:foo@bar.com\"></a>."
